@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--If we want to add an icon: -->
+		<!--<link rel="icon" href="res/images/...">-->
+		<title>Login</title>
+		<link rel="stylesheet" href="res/css/form.css">
+  </head>
+  <body>
+    <header class="header">
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="post.html">Add post</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+			<img class="picture" src="res/images/user.png" width="64" height="64">
+		</header>
+  <main>
+    <form>
+      <div>
+        <h4 style="text-align: center">Welcome to Postit</h4>
+        <a href="#">Create an account</a> or Please login:
+      </div>
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br><br>
+      <button id="submit" type="submit"><a href="index.html">Submit</a></button>
+      <!-- I wasn't find able to find out why does it shows input required only once -->
+    </form>
+  </main>
+  </body>
+</html>

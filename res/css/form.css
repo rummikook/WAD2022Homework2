@@ -1,0 +1,105 @@
+*{
+	font-family: arial;
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 2px;
+	padding: 2px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+body {
+	line-height: 1.6;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.picture {
+	margin-left: auto
+}
+
+.header {
+	display: flex;
+	padding: 2px 5px;
+	border: 3px solid #dd5d5100;
+	background-color: #dcd985;
+	box-shadow: 0px 0px 14px 0px rgba(68, 49, 24, 0.75);
+	border-radius: 5px;
+}
+
+.nav a {
+	display: flex;
+	padding: 20px 20px;
+	color: #7c6100;
+	font-size: .99em;
+}
+
+.nav a:hover {
+	background-color: #dcd985;
+	filter: brightness(80%);
+	border-radius: 5px;
+}
+
+form {
+	display: flex;
+	background-color:	#D3D3D3;
+	border-radius: 10px;
+	width: 40%;
+	padding: 1em;
+	flex-direction: column;
+	margin: 1em;
+}
+
+form > * {
+	margin: 0.5em;
+}
+
+#submit {
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	border-radius: 5px;
+	width: 8em;
+}
+
+input {
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+h4 ~ a {
+	color: white;
+}
+
+textarea {
+	height: 8em;
+}
+
+@media (max-width: 800px) {
+	form {
+		width: 95%;
+	}
+	ul {
+		flex-direction: column;
+	}
+}
