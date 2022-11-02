@@ -110,7 +110,7 @@ form > * {
 	width: 8em;
 }
 
-#text#password#file {
+#username, #password {
 	width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
