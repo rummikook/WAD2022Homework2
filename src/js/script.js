@@ -20,13 +20,7 @@ function myData(Data) {
     console.log(Data.record);
 }
 
-function myData(Data) {
-    //all of data with metadata
-    console.log(Data)
-        //all of data without metadata
-    console.log(Data.record);
-}
-
+/*
 var a_parent = document.querySelectorAll(".picture");
 var dd_menu_a = document.querySelectorAll(".dd_menu_item");
 
@@ -52,3 +46,6 @@ dd_menu_a.forEach(function(dd_menu_item) {
         dd_menu_item.classList.add("active");
     })
 })
+*/
+
+
