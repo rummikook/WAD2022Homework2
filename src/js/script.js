@@ -1,11 +1,12 @@
-loadJSON(myData);
+//loadJSON(myData);
+loadLocalJSON();
 
-function loadJSON(success){
+function loadJSON(){
     let req = new XMLHttpRequest();
 
     req.onreadystatechange = () => {
     if (req.readyState == XMLHttpRequest.DONE) {
-        success(JSON.parse(req.responseText));
+        myData(JSON.parse(req.responseText).record.posts);
     }
     };
 
@@ -13,9 +14,14 @@ function loadJSON(success){
     req.send();
 }
 
-function myData(Data) {
+function loadLocalJSON() {
+    fetch("http://localhost:3000/posts")
+        .then(res => res.json())
+        .then(data => myData(data))
+}
+
+function myData(posts) {
     var main = document.getElementsByTagName("main")
-    const posts = Data.record.posts
     for (let i = 0; i < posts.length; i++) {
         const post = posts[i]
 
